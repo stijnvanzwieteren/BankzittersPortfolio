@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Creatief Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+ 	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#over-mij">Over Mij</a></li>
+                <li><a href="#projecten">Projecten</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+    /* Algemene stijlen */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #9001;
+    color: #ffffff;
+}
+
+
+
+/* Navigatiebalk */
+header {
+    background-color: #1f1f1f;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+
+
+/* Secties */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#home {
+    background: url('achtergrond.jpg') no-repeat center center/cover;
+    color: #ffffff;
+}
+
+#projecten .projecten-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    background-color: #ff6600;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project p {
+	color: white
+}
+
+.project video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e6b800;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.containerovermij {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Layout to align text on the left and image on the right */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Text content takes up available space */
+.text-content {
+    flex: 1;
+}
+
+/* Title Styling */
+.title span {
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Social Icons */
+.socials {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.socials i {
+    margin-right: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+.socialsfooter {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.socialsfooter i {
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.socials i:hover {
+    color: #ff6600;
+}
+
+.socialsfooter i:hover {
+    color: #ff6600;
+}
+
+h2 {
+    font-style: italic;
+    margin-top: 20px;
+    color: black
+}
+
+/* Grid for Information & Favorites */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.info-box {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.info-box span {
+    display: block;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.info-box a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Image on the Right */
+.profile-image {
+    max-width: 40%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-image {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+</style>
+    <section id="home">
+    <div class="containerovermij">
+        <div class="content-wrapper">
+            <div class="text-content">
+                <h1 class="title"><span>Stijn</span></h1>
+                <p class="description">
+                    Ik ben Stijn en ik ben 22 jaar oud. Ik studeer momenteel de Master Media Studies: Media Creation and Innovation aan de Rijksuniversiteit in Groningen. Veel (semi)professionele ervaring met content productie met een Creative functie, zoals in jullie vacature vernoemd, heb ik nog niet. In deze portfolio, die speciaal gemaakt is voor deze sollicitatie, laat ik enkele projecten zien die ik echter wel op naam kan schrijven. Waarom ik dan alsnog solliciteer voor deze functie heb ik vermeld in mijn motivatiebrief. Ik hoop dan ook in de loop der tijd deze portfolio uit te breiden met gave projecten!
+                </p>
+
+                <!-- Social Media Icons -->
+                <div class="socials">
+                    <a href="https://www.tiktok.com/@stijnvanz"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@StijnVZ"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/stijnvanzwieteren/"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <h2>Informatie</h2>
+                <div class="info-grid">
+                    <div class="info-box">Naam <span>Stijn van Zwieteren</span></div>
+                    <div class="info-box">Geboren <span>25 november 2002</span></div>
+                    <div class="info-box">Lengte <span>1,83</span></div>
+                    <div class="info-box">Gewicht <span>81 kg</span></div>
+                    <div class="info-box">Omgeving <span>Groningen (13 minuutjes fietsen van het Mercure hotel)</span></div>
+                    <div class="info-box">Studie <span>MA Media Studies: Media Creation and Innovation</span></div>
+                </div>
+
+                <h2>Favorieten</h2>
+                <div class="info-grid">
+                    <div class="info-box">Voetbalteam(s) <span>Feyenoord</span></div>
+                    <div class="info-box">Idool <span>Anton Bos</span></div>
+                    <div class="info-box">Lievelingseten <span>Als er maar eiwit in zit</span></div>
+                    <div class="info-box">Lievelingsvideo <span>BANKZITTERS GAAN SCHATZOEKEN</span></div>
+                </div>
+            </div>
+
+            <!-- Image positioned on the right -->
+            <img src="fotovanmij.jpg" alt="Foto van mij" class="profile-image">
+        </div>
+    </div>
+    </section>
+    <section id="projecten">
+        <h2>Mijn Portfolio</h2>
+        <div class="projecten-container">
+            <!-- Herhaal dit blok voor elk project -->
+            <div class="project">
+                <video>
+                <source src="project1.mp4" type="video/mp4">
+                </video>
+                <h3>Promotievideo tijdschriftartikel</h3>
+                <p>Dit project was een opdracht voor mijn studie, vandaar dat het in het Engels is. Voor dit vak moesten we een onderzoeksartikel schrijven voor een wetenschappelijk tijdschrift en dit promoten aan de hand van een video die het onderwerp introduceerde, in dit geval over de voor- en nadelen van online fitness content, en de kijker naar het artikel zou (ver)leiden. De video moest kort maar krachtig zijn en visueel aantrekkelijk genoeg zijn om de doelgroep van middelbare scholieren aan te spreken. Verder mocht ik het creatieve proces zelf invullen.</p>
+            </div>
+            <!-- Einde herhaling -->
+            <div class="project">
+                <video>
+                <source src="project2.mp4" type="video/mp4">
+                </video>
+                <h3>Symposium Promotie</h3>
+                <p>Dit was een project waar ik vrijwillig aan heb gewerkt. Mijn vriendin zat in de Symposium commissie van de studievereniging van IT-Recht aan de Rijksuniversiteit Groningen. Om het symposium te promoten, wilde deze commissie een video posten op de Instagram pagina van de vereniging. Ik heb toen aangeboden om te helpen bij het bedenken en maken van de video. Mijn bijdrage hieraan is het bedenken van het script, de camerabeelden en het editen van de video. Het film- en acteerwerk hebben de commissieleden zelf gedaan.</p>
+            </div>
+            <div class="project">
+                <video>
+                <source src="project3.mp4" type="video/mp4">
+                </video>
+                <h3>Vriendenvakantie</h3>
+                <p>Van de drie video's is deze het minst serieus, helemaal niet serieus zelfs. Het bevat stukken van een vakantievideo die ik heb gemaakt van al het beeldmateriaal dat gemaakt is op vakantie met mijn vrienden afgelopen zomer. Wat je hier ziet is echter niet de hele video, want dan zou het ruim een kwartier lang zijn. Echter kun je hier wel een zelfde soort stijl in terug vinden als op het Bankzitters kanaal, behalve dan natuurlijk het verschil in kwaliteit. Er zat van tevoren geen idee achter om een vakantievideo te maken, vandaar dat er ook geen structuur in zat. Het is meer om te laten zien dat ik wel de capaciteit heb om met vrijwel niks toch iets vermakelijks neer kan zetten. Als jullie toch de hele video willen zien, druk dan op de knop hieronder.</p>
+			<a href="https://youtu.be/s6H5qvAo-OQ" class="btn">Hele video</a>
+            </div>
+            <div class="project">
+                <img src="youtubekanaal.jpg" alt="Youtube Kanaal">
+                <h3>Youtube Kanaal</h3>
+                <p>In de goede oude tijd heb ik zelf ook Youtube video's gemaakt, zoals wel meer mensen op het Bankzitters kantoor. Ze staan nog online maar zijn al wel een paar jaar oud. Desondanks heb ik ze er toch maar bij gezet, om te laten zien dat ik hier wel enige ervaring mee heb.</p>
+                <a href="https://www.youtube.com/@StijnVZ" class="btn">Bekijk meer</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+                        <div class="socialsfooter">
+                    <a href="https://www.tiktok.com/@stijnvanz"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@StijnVZ"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/stijnvanzwieteren/"><i class="fab fa-instagram"></i></a>
+                </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
